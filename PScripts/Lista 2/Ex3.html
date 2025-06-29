@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <script>
+        function calcularMedia() {
+            var numero1 = parseFloat(document.getElementById("numero1").value);
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            var numero3 = parseFloat(document.getElementById("numero3").value);
+            var numero4 = parseFloat(document.getElementById("numero4").value);
+            var media = (numero1 + numero2 + numero3 + numero4) / 4;
+            document.getElementById("resultado").innerHTML = "A média dos números é: " + media.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora de Média</h1>
+    <label for="numero1">Número 1:</label>
+    <input type="number" id="numero1"><br>
+    <label for="numero2">Número 2:</label>
+    <input type="number" id="numero2"><br>
+    <label for="numero3">Número 3:</label>
+    <input type="number" id="numero3"><br>
+    <label for="numero4">Número 4:</label>
+    <input type="number" id="numero4"><br>
+    <button onclick="calcularMedia()">Calcular Média</button><br>
+    <div id="resultado"></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Área da Figura</title>
+    <script>
+        function calcularArea() {
+            var lado1 = parseFloat(document.getElementById("lado1").value);
+            var lado2 = parseFloat(document.getElementById("lado2").value);
+            var area = lado1 * lado2;
+            var tipo = (lado1 === lado2) ? "quadrado" : "retângulo";
+            document.getElementById("resultado").innerHTML = "Área: " + area + " unidades quadradas.";
+            document.getElementById("tipo").innerHTML = "É um " + tipo + ".";
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora de Área</h1>
+    <label for="lado1">Lado 1:</label>
+    <input type="number" id="lado1"><br>
+    <label for="lado2">Lado 2:</label>
+    <input type="number" id="lado2"><br>
+    <button onclick="calcularArea()">Calcular</button><br>
+    <div id="resultado"></div>
+    <div id="tipo"></div>
+</body>
+</html>
