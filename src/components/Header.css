@@ -1,0 +1,51 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;  /* Remove underline */
+  color: #1f2937;          /* Cor do texto */
+}
+
+.logo:hover {
+  text-decoration: none; /* garante que não apareça underline ao passar o mouse */
+  color: #3b82f6;        /* cor ao passar o mouse */
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #3b82f6;
+}
+
+.login-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  background-color: #3b82f6;
+  color: #fff;
+}

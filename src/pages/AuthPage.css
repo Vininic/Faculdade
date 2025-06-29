@@ -1,0 +1,161 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  padding: 2rem;
+}
+
+.auth-box {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.auth-box label {
+  font-size: 0.9rem;
+  color: #374151;
+  margin-bottom: 0.3rem;
+}
+
+.auth-box input[type='text'],
+.auth-box input[type='email'],
+.auth-box input[type='password'] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: #f9fafb;
+}
+
+.auth-box input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: white;
+}
+
+.auth-box small {
+  display: block;
+  margin-bottom: 1.5rem;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.auth-box button[type='submit'],
+.auth-box button[type='button'] {
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.auth-box .social-login {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.auth-box .social-login p {
+  margin-bottom: 0.8rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.auth-box .social-login button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: white;
+  color: #374151;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.auth-box .social-login button:hover {
+  background-color: #f3f4f6;
+}
+
+.auth-box .footer-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.auth-box .footer-link a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.auth-box .footer-link a:hover {
+  text-decoration: underline;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-top: -0.3rem;
+  margin-bottom: 1rem;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: #374151;
+}
+
+.forgot-link {
+  font-size: 0.85rem;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Termos de uso */
+.terms {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+.terms .checkbox-group {
+  font-size: 0.85rem;
+  color: #374151;
+}
+
+.terms input[type='checkbox'] {
+  margin-right: 0.5rem;
+}
